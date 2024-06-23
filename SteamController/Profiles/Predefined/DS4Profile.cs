@@ -102,12 +102,7 @@ namespace SteamController.Profiles.Predefined
             context.DS4[DS4Controller.AccelX] = context.Steam.AccelX;
             context.DS4[DS4Controller.AccelY] = context.Steam.AccelY;
             context.DS4[DS4Controller.AccelZ] = context.Steam.AccelZ;
-
-            // Trackpad
-            context.DS4[DS4Controller.TPadClick] = context.Steam.BtnLPadPress || context.Steam.BtnRPadPress;
-            context.DS4[DS4Controller.LeftFinger] = GetTPadPoint(context.Steam.LPadX, context.Steam.LPadY);
-            context.DS4[DS4Controller.RightFinger] = GetTPadPoint(context.Steam.RPadX, context.Steam.RPadY);
-
+            
             return Status.Continue;
         }
 
