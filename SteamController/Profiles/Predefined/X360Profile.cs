@@ -7,9 +7,9 @@ namespace SteamController.Profiles.Predefined
     {
         public static readonly TimeSpan HoldToggleTouchPads = TimeSpan.FromMilliseconds(2000);
         public const String TouchPadsConsumed = "TouchPads";
-        public bool EmulateTouchPads { get; set; } = true;
+        public bool EmulateTouchPads { get; set; } = false;
 
-        private bool TouchPadsEnabled { get; set; } = true;
+        private bool TouchPadsEnabled { get; set; } = false;
 
         public override System.Drawing.Icon Icon
         {
